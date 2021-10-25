@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main (){
+    int n1,n2; //n1 contains size of triangle and n2 contains starting number of triangle//
+    int c1,c2; //both are used as counters//
+    
+
+    printf("Welcome\n");
+    
+
+    printf("Enter the Number of Rows and Columns You Want To Enter\n");
+    scanf("%d", &n1);
+    printf("Enter the Number from which you want to start Triangle\n");
+    scanf("%d", &n2);
+
+   
+    for( c1=1;c1<=n1;c1++){
+        for(c2=n1;c2>=c1;c2--){
+            if(n2>9)
+        
+            n2=1;
+            printf("%d",n2);
+            n2++;
+        }
+        printf("\n");
+    }
+    return 0;
+}
